@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.p-card .p-card-title{
+    text-align: center ;
+}
+
+.p-inputgroup {
+    margin: 15px 0;
+}
+.p-inputgroup .p-inputtext, .p-fluid .p-inputgroup .p-inputtext, .p-inputgroup .p-inputwrapper, .p-inputgroup .p-inputwrapper>.p-component {
+    flex: 1 1 auto;
+    width: 100%;
+}
+.p-button.p-button-secondary.p-button-text, .p-buttonset.p-button-secondary > .p-button.p-button-text, .p-splitbutton.p-button-secondary > .p-button.p-button-text {
+    background-color: transparent;
+    color: #64748B;
+    border-color: transparent;
+    text-align: center !important;
+    width: 100%;
+    display: block;
+}
+
