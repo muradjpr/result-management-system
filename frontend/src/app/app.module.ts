@@ -51,7 +51,8 @@ import { AddResultComponent } from './components/add-result/add-result.component
     ],
     providers: [],
     exports: [
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     ],
     bootstrap: [AppComponent]
 })

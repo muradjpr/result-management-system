@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import {ProductService} from "../../Services/product.service";
+import {AuthService} from "../../Services/auth.service";
 
 export interface Product {
   id?:string;
@@ -42,9 +43,15 @@ export class ResultsComponent implements OnInit{
   submitted!: boolean;
 
 
-  constructor(private productService: ProductService, private messageService: MessageService, private confirmationService: ConfirmationService) { }
+  constructor(private productService: ProductService, private authService: AuthService, private messageService: MessageService, private confirmationService: ConfirmationService) { }
 
   ngOnInit() {
+    this.authService.currentUser.subscribe(
+      res => {
+        console.log(res)
+      }
+    )
+
     this.productService.getProducts().then((data:any) => this.products = data);
   }
 

@@ -1,0 +1,13 @@
+.formArea {
+  position: relative;
+  width: 100%;
+  height: 100vh
+}
+
+.formBox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+}
