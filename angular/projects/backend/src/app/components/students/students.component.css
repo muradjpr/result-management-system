@@ -1,0 +1,31 @@
+.start-100 {
+  left: 91% !important;
+}
+.border-green {
+  border-color: darkseagreen;
+}
+
+.border-green:focus {
+  border-color: darkseagreen;
+}
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-mdc-table .mdc-data-table__header-row {
+  height: 56px;
+  background: seagreen;
+  color: black;
+}
+
+.mat-mdc-cell{
+  background: white;
+  color: black;
+  border-color: lightgray;
+}

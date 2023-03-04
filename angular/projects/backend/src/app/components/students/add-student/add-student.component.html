@@ -1,0 +1,60 @@
+<div class="row ">
+  <div class="col-md-6 offset-3 border-success border rounded-3 mt-5 p-5">
+    <h2 class="text-center">Add Students</h2>
+
+    <form action="" [formGroup]="studentForm" (ngSubmit)="onaddstudent()">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Roll Number</label>
+        <input type="number" class="form-control" formControlName="roll">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Father Name</label>
+        <input type="text" class="form-control" formControlName="fathername">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="text" class="form-control" formControlName="phone">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Courses</label>
+        <select class="form-select" name="" id="">
+          <option value="">Select course</option>
+        </select>
+      </div>
+
+      <div class="mb-3 d-flex ">
+        <div class="form-check me-5">
+
+          <label class="form-check-label" >
+            Male <input class="form-check-input" type="radio" value="male" formControlName="gender">
+          </label>
+        </div>
+        <div class="form-check">
+
+          <label class="form-check-label" >
+            Female <input class="form-check-input" type="radio" value="" >
+          </label>
+        </div>
+      </div>
+
+
+      <div class="mt-4">
+        <button class="btn btn-outline-success w-100" type="submit">Create</button>
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+
+</div>
